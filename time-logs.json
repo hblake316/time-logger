@@ -11,31 +11,109 @@
       "name": "Meeting",
       "state": "stopped",
       "order": 1
+    },
+    {
+      "id": "1763650952916",
+      "name": "PR Review",
+      "state": "stopped",
+      "order": 2
+    },
+    {
+      "id": "1763650995218",
+      "name": "Bug fixes",
+      "state": "stopped",
+      "order": 3
+    },
+    {
+      "id": "1763650966342",
+      "name": "Support Task Review",
+      "state": "stopped",
+      "order": 4
+    },
+    {
+      "id": "1763650919332",
+      "name": "Tech Lead Miscellaneous Duties",
+      "state": "stopped",
+      "order": 5
+    },
+    {
+      "id": "1763668385372",
+      "name": "Helping Someone",
+      "state": "stopped",
+      "order": 6
     }
   ],
   "logs": [
     {
-      "id": "1763649324138",
-      "activityName": "Feature development",
-      "activityId": "1763649012518",
-      "startTime": "2025-11-20T14:40:00.000Z",
+      "id": "1763650921799",
+      "activityName": "Tech Lead Miscellaneous Duties",
+      "activityId": "1763650919332",
+      "startTime": "2025-11-20T14:00:00.000Z",
+      "endTime": "2025-11-20T14:30:00.000Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763650954499",
+      "activityName": "PR Review",
+      "activityId": "1763650952916",
+      "startTime": "2025-11-20T14:30:00.000Z",
       "endTime": "2025-11-20T14:45:00.000Z",
       "date": "11/20/2025"
     },
     {
-      "id": "1763649607737",
-      "activityName": "Meeting",
-      "activityId": "1763649488253",
-      "startTime": "2025-11-20T14:06:00.000Z",
-      "endTime": "2025-11-20T14:26:00.000Z",
+      "id": "1763650968127",
+      "activityName": "Support Task Review",
+      "activityId": "1763650966342",
+      "startTime": "2025-11-20T14:45:00.000Z",
+      "endTime": "2025-11-20T15:00:00.000Z",
       "date": "11/20/2025"
     },
     {
-      "id": "1763649618657",
+      "id": "1763654572075",
+      "activityName": "Meeting",
+      "activityId": "1763649488253",
+      "startTime": "2025-11-20T15:30:00.000Z",
+      "endTime": "2025-11-20T16:02:00.000Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763654595791",
       "activityName": "Feature development",
       "activityId": "1763649484577",
-      "startTime": "2025-11-20T14:30:00.000Z",
-      "endTime": "2025-11-20T14:40:00.000Z",
+      "startTime": "2025-11-20T16:03:15.791Z",
+      "endTime": "2025-11-20T19:52:52.976Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763668388335",
+      "activityName": "Helping Someone",
+      "activityId": "1763668385372",
+      "startTime": "2025-11-20T19:53:08.335Z",
+      "endTime": "2025-11-20T20:18:16.879Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763669899564",
+      "activityName": "Feature development",
+      "activityId": "1763649484577",
+      "startTime": "2025-11-20T20:18:19.564Z",
+      "endTime": "2025-11-20T20:37:26.273Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763671932935",
+      "activityName": "Bug fixes",
+      "activityId": "1763650995218",
+      "startTime": "2025-11-20T20:52:12.935Z",
+      "endTime": "2025-11-20T22:20:48.195Z",
+      "date": "11/20/2025"
+    },
+    {
+      "id": "1763677249291",
+      "activityName": "Support Task Review",
+      "activityId": "1763650966342",
+      "startTime": "2025-11-20T22:20:49.291Z",
+      "endTime": "2025-11-20T23:26:25.235Z",
       "date": "11/20/2025"
     }
   ]

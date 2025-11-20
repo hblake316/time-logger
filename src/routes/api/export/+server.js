@@ -55,8 +55,9 @@ export async function POST({ request }) {
     // Build CSV content
     let csv = 'Date,Activity Name,Start Time,End Time,Duration\n';
     
-    // Track totals per activity
+    // Track totals per activity and overall total
     const activityTotals = {};
+    let totalMs = 0;
     
     filteredLogs.forEach(log => {
       const date = formatDate(log.startTime);
@@ -69,6 +70,7 @@ export async function POST({ request }) {
       // Calculate totals
       const ms = new Date(log.endTime) - new Date(log.startTime);
       activityTotals[log.activityName] = (activityTotals[log.activityName] || 0) + ms;
+      totalMs += ms;
     });
     
     // Add totals section
@@ -82,6 +84,14 @@ export async function POST({ request }) {
       const duration = hours > 0 ? `${hours}h ${remainingMinutes}m` : `${minutes}m`;
       csv += `"${activity}",${duration}\n`;
     });
+    
+    // Add total hours worked
+    csv += '\nTotal Hours Worked\n';
+    const totalMinutes = Math.floor(totalMs / 60000);
+    const totalHours = Math.floor(totalMinutes / 60);
+    const remainingMinutes = totalMinutes % 60;
+    const totalDuration = totalHours > 0 ? `${totalHours}h ${remainingMinutes}m` : `${totalMinutes}m`;
+    csv += `Total,${totalDuration}\n`;
     
     return new Response(csv, {
       headers: {
